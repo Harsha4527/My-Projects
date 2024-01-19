@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.background{
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('netflixlogo_files/IN-en-20240107-trifectadaily-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    text-align: center;
+    
+    background-position: center;
+    
+    
+}
+nav{
+    height: 45px;
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+    margin-left: 100px;
+    position: absolute;
+
+}
+.buttons{
+    display: flex;
+}
+ .netflixlogo{
+    cursor: pointer;
+   
+    min-height: 30px;
+    min-width: 90px;
+    max-height: 100px;
+    max-width: 200px; /* Added 'px' unit */
+    height: auto;
+    width: auto;
+   
+    margin: 8px 0px 0px 16px; /* corrected commas to spaces */
+    margin-top: 20px;
+    }
+     
+    
+
+
+nav button{
+     height: 30px;
+     width: 75px;
+     border: 1px solid red;
+     border-radius: 4px;
+     margin-top: 35px;
+     background-color: red;
+     color: white;
+     cursor: pointer;
+
+}
+.English{
+    background-color: transparent;
+    color: white;
+
+}
+select {
+     
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+     
+    cursor: pointer;
+    height: 30px;
+   
+  }
+ nav i{
+    margin-top: 35px;
+    display: inline-flex;
+    align-items: center;
+     
+    cursor: pointer;
+    padding-right: 5px;
+    border-radius: 4px;
+    border: 0.5px solid white;
+    margin-right: 15px;
+}
+ 
+ 
+.text1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  
+}
+.text1 h1{
+font-size: 38px;
+line-height: 70px;
+font-weight: 600;
+max-width: 700px;
+}
+.text1 h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.text1 p{
+    
+    margin-bottom: 20px;
+
+
+}
+.Email{
+    display: flex;
+    align-items:  center;
+    border-radius: 4px;
+    background-color: transparent;
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.Email input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.Email button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+     
+}
+.features{
+    
+     padding: 50px 12%;
+     height: 22px;
+
+}
+.block{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+     
+    padding: 50px 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+     
+    
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img2 {
+    
+    width: 100%;
+    background-image: url('1.jpeg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.h1text{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px ;
+    padding-left: 100px;
+}
+.faq h2{
+    padding: 10px 10%;
+
+    text-align: center;
+    font-size: 18px ;
+    
+    padding-left: 20px;
+}
+.accordion{
+   
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin-left: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+
+}
+input[type='radio']{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition:  max-height 0.5s,padding 0.5s;
+
+}
+.accordion input[type='radio']:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type='radio']:checked+label::after{
+    transform: rotate(135deg);
+}
+.features .Email{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.features small{
+    margin-left:  300px;
+      
+     font-size: 13px;
+}
+footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+footer h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+footer .col{
+   
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+footer .col a{ 
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+ footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 0;
+ }
+ footer .fa-solid{
+    margin-top: 10PX;
+    border: 1px solid gray;
+    border-radius: 4px;
+ }
+ footer p{
+     
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+footer .col a:hover{
+    color: white;
+}
+/*----media---small-screen---*/
+@media screen and (max-width: 768px) {
+   
+
+   
+
+    nav{
+        margin-left: 5px;
+    }
+    nav .buttons{
+        padding: 4px 8px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+
+    .netflixlogo {
+        width: 100px;
+        margin-left: 0px;
+        padding-right: 15px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    
+
+    .faq,
+    .accordion,
+    .features {
+        padding: 10px 5%;
+    }
+
+    .accordion li label::after {
+        font-size: 20px;
+    }
+
+    footer .col {
+        flex-basis: 100%;
+    }
+    .text1{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+
+    }
+    .text1 h1{
+        font-size: 30px;
+    }
+    .Email {
+        font-size: 12px;
+        padding: 10px 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+
+    }
+    .text-col,.img-col{
+        flex-basis: 100%;
+
+    }
+    .features h1{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;}
+    
+    .block:nth-child(2),.block:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .block{
+        padding: 10px 0;
+    }
+    .features small{
+     margin-left: 20px;
+    font-size: auto;
+    margin: 0;
+    }
+    footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+footer h2{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+footer .col{
+   
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+footer .col a{ 
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+ footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    justify-content: space-evenly;
+ }
+ footer .fa-solid{
+    margin-top: 10PX;
+    border: 1px solid gray;
+    border-radius: 4px;
+ }
+ footer p{
+     
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+footer .col a:hover{
+    color: white;
+}
+   
+}
